@@ -1,6 +1,7 @@
 const vShader=`
+uniform float u_time;
 void main() {
-    uniform float u_time;
+    
     float newX=sin(position.x * u_time) * sin(position.y * u_time)
     
     vec3 newPosition=vec3(newX,position.y,position.z)
